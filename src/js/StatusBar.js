@@ -93,11 +93,11 @@ mindmaps.StatusNotificationController = function(eventBus, view) {
   }).appendTo(view);
 
   eventBus.subscribe(mindmaps.Event.DOCUMENT_SAVED, function() {
-    var n = new mindmaps.Notification($anchor, {
+/*     var n = new mindmaps.Notification($anchor, {
       position : "topRight",
       expires : 3500,
       content : "Mind map saved"
-    });
+    }); */
   });
   
   eventBus.subscribe(mindmaps.Event.NOTIFICATION_INFO, function(message) {

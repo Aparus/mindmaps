@@ -7,7 +7,7 @@
  * @param {mindmaps.MindMapModel} mindmapModel
  */
 mindmaps.AutoSaveController = function(eventBus, mindmapModel) {
-  var SAVE_INTERVAL = 1000 * 60; // 1 minute
+  var SAVE_INTERVAL = 1000 * 10; // 1 minute
   var timer = null;
 
   function save() {
